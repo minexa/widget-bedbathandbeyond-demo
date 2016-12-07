@@ -1,3 +1,4 @@
+(function () {
 /**
  * almond 0.2.0 Copyright (c) 2011, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
@@ -13855,3 +13856,4 @@ define('src/js/index',['require','jquery-private','text!dist/css-lib.tmpl','./jq
 
 
 require(["src/js/index"]);
+}());
