@@ -1,0 +1,15 @@
+{% extends 'base.twig' %}
+
+{% block main %}
+	
+	<!-- TVPAGE START -->
+	<script>
+	(function(r,d,p){
+		var s = d.createElement('script');
+		s.src = (p === 'https:'?'https:':'http:')+'//app.tvpage.com/tvsite/embed.bandh.com/embed-1';
+		d.write(s.outerHTML ? s.outerHTML : new XMLSerializer().serializeToString(s));
+	})(window,document,document.location.protocol);
+	</script>
+	<!-- TVPAGE END -->
+
+{% endblock %}

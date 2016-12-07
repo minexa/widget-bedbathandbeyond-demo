@@ -1,0 +1,9 @@
+$brand-blue-1: #191347;
+$brand-blue-2: #DEEEFB;
+$brand-blue-3: #1697FF;
+$brand-blue-4: #43ABFF;
+$mobileBreakpoint: 768px;
+
+@import "mixins";
+@import "carousel";
+@import "player-modal";
