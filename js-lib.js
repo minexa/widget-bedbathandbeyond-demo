@@ -11165,9 +11165,9 @@
       _tvp.urlId = urlId;
     }
 
-    _tvp.chgEndpoint = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.tv/cartridge/" + settings["videos-slider-1"];
-    _tvp.analyticsEndpoint = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.tv/cartridge/" + settings["analytics-1"];
-    _tvp.relatedProductsDesktop = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.tv/cartridge/" + settings["related-products-desktop"];
+    _tvp.chgEndpoint = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.com/cartridge/" + settings["videos-slider-1"];
+    _tvp.analyticsEndpoint = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.com/cartridge/" + settings["analytics-1"];
+    _tvp.relatedProductsDesktop = "//app.tvpage.com/tvsite/embed.bedbathandbeyond.com/cartridge/" + settings["related-products-desktop"];
   });
 
 //     Underscore.js 1.8.3
