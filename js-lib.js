@@ -13719,7 +13719,7 @@
     function startDesktop(html) {
       var scrollId = 'tvpprd-scroller';
       $('.watch-more-tvp-mobile').hide();
-      $el.html($('<div/>').attr('id', scrollId));
+      $el.append("<span id=\"lb-header-rp\">Related Products</span>").append($('<div/>').attr('id', scrollId));
       $el.find('#' + scrollId).html(html).promise().done(function() {
         var scroller = new IScroll('#tvpprd-scroller', scrollerSettings);
         setTimeout(function() { scroller.refresh(); }, 0);
@@ -13802,7 +13802,7 @@
     return {
       init: function(opts, callback) {
         options = opts || {};
-        $el = $('<div>').attr('id', 'tvpprd').appendTo(opts.place);
+        $el = $('<div>').attr('id', 'tvpprd').append("<span id=\"lb-header-rp\">Related Products</span>").appendTo(opts.place);
         $.subscribe('player:play-video', loadCartridge);
         $.subscribe('light-box:hiding', function() {
           if (!mobile) $el.html("");
