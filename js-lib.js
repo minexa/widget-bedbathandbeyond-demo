@@ -11268,9 +11268,9 @@
       }
       html += "</div>";
 
-//       $el.html(html).promise().done(function() {
-//         $el.find('#tvpchg-slider').slick(settings);
-//       });
+      $el.html(html).promise().done(function() {
+        $el.find('#tvpchg-slider').slick(settings);
+      });
 
     });
 
