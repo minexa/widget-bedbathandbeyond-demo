@@ -11212,15 +11212,40 @@
     var $el = $('#tvp-gallery');
     var settings = require('./settings');
 
-    var skeleton = '<div id="tvpchg-slider" class="slick-slider">\
-  <div aria-live="polite" class="slick-list draggable">\
-    <div class="slick-track" style="opacity: 1; width: 3402px; left: -729px;" role="listbox">\
-			<div class="slick-slide" style="width: 243px;"><div class="tvp-video col-3"><div class="tvp-video-image"><div class="video-overlay"></div></div><div class="tvp-skel-row"></div><div class="tvp-skel-row tvp-mid"></div></div></div>\
-      <div class="slick-slide" style="width: 243px;"><div class="tvp-video col-3"><div class="tvp-video-image"><div class="video-overlay"></div></div><div class="tvp-skel-row"></div><div class="tvp-skel-row tvp-mid"></div></div></div>\
-      <div class="slick-slide" style="width: 243px;"><div class="tvp-video col-3"><div class="tvp-video-image"><div class="video-overlay"></div></div><div class="tvp-skel-row"></div><div class="tvp-skel-row tvp-mid"></div></div></div>\
-    </div>\
-  </div>\
-</div>';
+     var skeleton = '<div id="tvpchg-slider" class="slick-initialized slick-slider" role="toolbar">\
+                    <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>\
+                    <div aria-live="polite" class="slick-list draggable">\
+                      <div class="slick-track" style="opacity: 1; width: 3402px; left: -729px;" role="listbox">\
+                        <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 243px;">\
+                          <div class="tvp-video col-3">\
+                            <div class="tvp-video-image" style="background-image:url(\'https://i.ytimg.com/vi/hZaL1aJEKkw/hqdefault.jpg\'); ">\
+                              <div class="video-overlay"></div>\
+                              <div class="tvp-video-play-button"></div>\
+                            </div>\
+                            <p><span class="tittle">the Breville  Boss To Go Personal Blender 30 sec TVC</span></p>\
+                          </div>\
+                        </div>\
+                        <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 243px;">\
+                          <div class="tvp-video col-3">\
+                            <div class="tvp-video-image" style="background-image:url(\'https://i.ytimg.com/vi/R0iTVBQWMsA/hqdefault.jpg\'); ">\
+                              <div class="video-overlay"></div>\
+                              <div class="tvp-video-play-button"></div>\
+                            </div>\
+                            <p><span class="tittle">Homemade Peanut Butter Recipe</span></p>\
+                          </div>\
+                        </div><div class=\"slick-slide slick-active\" style=\"width: 243px;\">\
+                          <div class=\"tvp-video col-3\">\
+                            <div class=\"tvp-video-image\" style=\"background-image:url(\'https://i.ytimg.com/vi/7veaH1pi1b4/hqdefault.jpg\'); ">\
+                              <div class=\"video-overlay\"></div>\
+                              <div class=\"tvp-video-play-button\"></div>\
+                            </div>\
+                            <p><span class=\"tittle\">Iced Chai Tea using the Compact Portable Blending/Chopping System</span></p>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                  </div>';
+
     $el.html(skeleton);
 
     var move = function(dir){
