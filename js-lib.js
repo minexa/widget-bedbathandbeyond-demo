@@ -13878,7 +13878,7 @@
           });
 
           setTimeout(function () {
-            $( "#tvp-gallery" ).fadeTo( 100 , 1, function() {
+            $( "#tvp-gallery" ).fadeTo( 50 , 1, function() {
               // Animation complete.
             });
           },0);
