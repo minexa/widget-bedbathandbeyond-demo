@@ -11236,7 +11236,8 @@
                     </div>\
                   </div>';
 
-    $el.html(skeleton).addClass('tvp-skel');
+    $el.addClass('tvp-skel');
+    $el.html(skeleton);
 
     var move = function(dir){
       $('#tvpchg-slider').slick('slick' + ( dir || "" ).charAt(0).toUpperCase() );
