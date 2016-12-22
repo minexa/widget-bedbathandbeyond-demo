@@ -4,6 +4,7 @@
 }
 .tvp-gallery-headline > span {
     text-transform: uppercase;
+    font-family: FuturaStdHeavy;
 }
 .tvp-skel-row {
     height: 9px;
@@ -609,7 +610,7 @@
         width: calc(13.5% - 4px);
         position: absolute;
         right: 10px;
-        top: 0;
+        top: -1px;
     }
     #tvpprd #tvpprd-scroller {
         height: 100%;
@@ -627,6 +628,7 @@
         right: -10px;
     }
     #tvpprd #tvpprd-scroller .iScrollIndicator {
+        cursor: pointer;
         background-color: #c7c7c7;
         box-sizing: border-box;
         position: absolute;
