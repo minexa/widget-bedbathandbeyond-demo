@@ -800,8 +800,8 @@
     padding: 0;
     height: 40px;
     text-align: center;
-    color: #fff;
-    font-family: Futura,sans-serif;
+    color: #273691;
+    font-family: FuturaStdMedium;
     width: 100%;
     border: none;
     text-transform: uppercase;
@@ -814,7 +814,7 @@
     }
 }
 #tvpprd .product-popup .call-to-action:hover {
-    background-color: #0496ce;
+    background-color: #e0e0e0;
 }
 #tvpprd .product-popup .product-img {
     position: relative;
