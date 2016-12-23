@@ -120,7 +120,7 @@
     color: transparent;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    top: 35%;
+    top: 32%;
     padding: 0;
     cursor: pointer;
     border: none;
@@ -133,22 +133,22 @@
 
 #tvp-gallery #tvpchg-slider .slick-prev,
 #tvp-gallery #tvpchg-slider-2 .slick-prev{
-    background: url('//cdn.socialannex.com/custom_images/9411360/JNSKKG_slider-prev.png') 0 0 no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEX///+ZmZnCwsLPz8/4+Pitra3r6+vW1ta0tLSgoKD/T5whAAAAM0lEQVR42u3KwREAIAgEsT1Q1P4btgR8ygx5h1bEClKuE/mR9sOZ45+DSTKou5x8Oa2CC7JOAJq0El54AAAAAElFTkSuQmCC) 0 0 no-repeat;
     left: -10px;
 }
-#tvp-gallery #tvpchg-slider .slick-prev:hover,
-#tvp-gallery #tvpchg-slider-2 .slick-prev:hover{
-    background: url('//cdn.socialannex.com/custom_images/9411361/HTCLSX_over_left.png') 0 100% no-repeat;
+#tvp-gallery #tvpchg-slider .slick-prev:not(.slick-disabled):hover,
+#tvp-gallery #tvpchg-slider-2 .slick-prev:not(.slick-disabled):hover{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEUzMzNAQEBcXFxqamqEhISgoKCtra3W1tbx8fH////MhPyBAAAATElEQVR42u3SMQ6AMAwEQQMxIf//cOhHMi0RbD3V6WKQ/egF6OzPKGPrIEzEAdLsF6gwIAwIU6B2o1bshBKpRCqRSqRKkCo///E10AQZZSvXPUevEwAAAABJRU5ErkJggg==) 0 100% no-repeat;
 }
 
 #tvp-gallery #tvpchg-slider .slick-next,
 #tvp-gallery #tvpchg-slider-2 .slick-next{
-    background: url(//cdn.socialannex.com/custom_images/9411360/X334Z7_slider-next.png ) 100% 0 no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEX///+ZmZnCwsLPz8/4+Pitra3r6+vW1ta0tLSgoKD/T5whAAAAM0lEQVR4AWMYEmAUMDMRoYaRkbAqJsahq4qFFaiIefCoYeAgQg0DGydIDUFV7EMkJY4CAHRMAJpB0PahAAAAAElFTkSuQmCC) 100% 0 no-repeat;
     right: -14px;
 }
-#tvp-gallery #tvpchg-slider .slick-next:hover,
-#tvp-gallery #tvpchg-slider-2 .slick-next:hover{
-    background: url('//cdn.socialannex.com/custom_images/9411361/37UPUM_over_right.png') 100% 100% no-repeat;
+#tvp-gallery #tvpchg-slider .slick-next:not(.slick-disabled):hover,
+#tvp-gallery #tvpchg-slider-2 .slick-next:not(.slick-disabled):hover{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEUzMzNAQEBcXFxqamqEhISgoKCtra3W1tbx8fH////MhPyBAAAAS0lEQVR4Ae3TOwqAQAwA0agbP/e/sNs/IXYiZOrXTlwv+hw1ylGjjECBRqBAKBAKhBKpCnSuEyWoMCAMSPOMNo3oWDCgqfYe4SfoBhPXK9dekNClAAAAAElFTkSuQmCC) 100% 100% no-repeat;
 }
 
 #tvp-gallery #tvpchg-slider ul,
