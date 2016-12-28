@@ -1,6 +1,7 @@
 .tvp-gallery-headline {
     margin: 15px 0 12px 15px;
     font-family: FuturaStdHeavy;
+    font-size: 18px !important;
 }
 .tvp-gallery-headline > span {
     text-transform: uppercase;
@@ -36,9 +37,9 @@
     content: " ";
     width: 0;
     height: 0;
-    border-top: 29px solid transparent;
-    border-bottom: 29px solid transparent;
-    border-left: 25px solid #e8e8e8;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 13px solid #e8e8e8;
     position: absolute;
     top: 0;
     left: 1px;
@@ -49,9 +50,9 @@
     content: " ";
     width: 0;
     height: 0;
-    border-top: 29px solid transparent;
-    border-bottom: 29px solid transparent;
-    border-left: 25px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 13px solid #fff;
     position: absolute;
     top: 0;
     left: -1px;
@@ -126,29 +127,33 @@
     border: none;
     outline: none;
 }
-#tvp-gallery #tvpchg-slider .slick-arrow.slick-disabled,
-#tvp-gallery #tvpchg-slider-2 .slick-arrow.slick-disabled {
-    opacity: 0.5 !important;
+#tvp-gallery #tvpchg-slider .slick-prev.slick-disabled,
+#tvp-gallery #tvpchg-slider-2 .slick-prev.slick-disabled {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////q6uq4uLilpaWYmJiXl5d1dXV3d3dYWFhUVFRVVVUlJSUTExMPDw8MDAwFBQUCAgICAgIBAQEAAAACzLiLAAAAE3RSTlOAhZSbn6Curr2/v97t8PP6/P3+WyEdvAAAAEpJREFUeAHtytsJgDAQRcFjNPFt1O2/V0kD3kUQFDLfQ/VYNweUmG0L+pgtjmOD44yfOa3jkMrZI/emsvKv14peZ49cR0JrqF5zAUZ2BlxR+a0IAAAAAElFTkSuQmCC)  0 0 no-repeat;
 }
 
 #tvp-gallery #tvpchg-slider .slick-prev,
 #tvp-gallery #tvpchg-slider-2 .slick-prev{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEX///+ZmZnCwsLPz8/4+Pitra3r6+vW1ta0tLSgoKD/T5whAAAAM0lEQVR42u3KwREAIAgEsT1Q1P4btgR8ygx5h1bEClKuE/mR9sOZ45+DSTKou5x8Oa2CC7JOAJq0El54AAAAAElFTkSuQmCC) 0 0 no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAAAAADEa8dEAAAAfklEQVQ4y+3TMQ6AIAwFUO5/g0qYjIm71xAP0B0TJw7goIBToVAWN5jf0Pz/UU/HUwNx6Ny8iJyB2QsoGIC1jZKBo4k+szdvYk2GeENRxRB0VQxBGI12QuI2KuOEWioqi4BXeZisKmrhVFlwUos0laAmFEdnNXbM9x4/+D/0ApZm572vLMrdAAAAAElFTkSuQmCC) 0 0 no-repeat;
     left: -10px;
 }
 #tvp-gallery #tvpchg-slider .slick-prev:not(.slick-disabled):hover,
 #tvp-gallery #tvpchg-slider-2 .slick-prev:not(.slick-disabled):hover{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEUzMzNAQEBcXFxqamqEhISgoKCtra3W1tbx8fH////MhPyBAAAATElEQVR42u3SMQ6AMAwEQQMxIf//cOhHMi0RbD3V6WKQ/egF6OzPKGPrIEzEAdLsF6gwIAwIU6B2o1bshBKpRCqRSqRKkCo///E10AQZZSvXPUevEwAAAABJRU5ErkJggg==) 0 100% no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////n5+exsbGdnZ2UlJSSkpJ5eXl4eHhkZGRjY2NiYmJGRkY8PDw7Ozs5OTk1NTU0NDQ1NTUzMzMzMzO2cabbAAAAE3RSTlNNVGlzeXqNjqOlptHl6u74+/z9yW1l7QAAAEpJREFUeAHtytsJgDAQRcFjNMZ31O2/V0kD3kUQFDLfQ/VYNweUmG0L+pgtjmOD40yfOa3jkMrZI/fGsvKv14peZ49cR0JrqF5zAUhHBloYYs0+AAAAAElFTkSuQmCC) 0 100% no-repeat;
 }
 
 #tvp-gallery #tvpchg-slider .slick-next,
 #tvp-gallery #tvpchg-slider-2 .slick-next{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEX///+ZmZnCwsLPz8/4+Pitra3r6+vW1ta0tLSgoKD/T5whAAAAM0lEQVR4AWMYEmAUMDMRoYaRkbAqJsahq4qFFaiIefCoYeAgQg0DGydIDUFV7EMkJY4CAHRMAJpB0PahAAAAAElFTkSuQmCC) 100% 0 no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAAAAADEa8dEAAAAeklEQVQ4y+3TMQ6AIAwFUO5/g0qYjIm710APwI4JEwdw0BAnf3+AxY3OL2n705q7o8xAgPJ2NlGexcUWWkWY+qJDqIKZPFW4HVUqAqZ0TkSRMF+V6ijaokIVRVeMr7YjRiFmEFEDiBtACzWAwsQMzhTs3nG+1/jgn9EDlzrntusNQNoAAAAASUVORK5CYII=) 100% 0 no-repeat;
     right: -14px;
 }
 #tvp-gallery #tvpchg-slider .slick-next:not(.slick-disabled):hover,
 #tvp-gallery #tvpchg-slider-2 .slick-next:not(.slick-disabled):hover{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAHlBMVEUzMzNAQEBcXFxqamqEhISgoKCtra3W1tbx8fH////MhPyBAAAAS0lEQVR4Ae3TOwqAQAwA0agbP/e/sNs/IXYiZOrXTlwv+hw1ylGjjECBRqBAKBAKhBKpCnSuEyWoMCAMSPOMNo3oWDCgqfYe4SfoBhPXK9dekNClAAAAAElFTkSuQmCC) 100% 100% no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////n5+exsbGdnZ2UlJSSkpJ5eXl4eHhkZGRjY2NiYmJGRkY8PDw7Ozs5OTk1NTU0NDQ1NTUzMzMzMzO2cabbAAAAE3RSTlNNVGlzeXqNjqOlptHl6u74+/z9yW1l7QAAAEpJREFUeNrtylEKgCAQBcBnZZZZanv/u8ZewCeBoOB8D6Y/lmvj55FoQQQRvg6pWb7rtaLIJl2ufKIeP9TBzY7aXz2Myyc4g6mtD1PABmF2MmX4AAAAAElFTkSuQmCC) 100% 100% no-repeat;
+}
+#tvp-gallery #tvpchg-slider .slick-next.slick-disabled,
+#tvp-gallery #tvpchg-slider-2 .slick-next.slick-disabled {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////q6uq4uLilpaWYmJiXl5d1dXV3d3dYWFhUVFRVVVUlJSUTExMPDw8MDAwFBQUCAgICAgIBAQEAAAACzLiLAAAAE3RSTlOAhZSbn6Curr2/v97t8PP6/P3+WyEdvAAAAEpJREFUeNrtylEKgCAQBcCnqWWaVnv/u8ZewCdBYOB8D6Y3bHL8FKkeRBbha5OeFYdeC5r8qSu0T9UTf3VwsKPWWw8Trh2cwfStBzSbBlW1h468AAAAAElFTkSuQmCC)  100% 0 no-repeat;
 }
 
 #tvp-gallery #tvpchg-slider ul,
@@ -331,7 +336,7 @@
     transform: translate(-50%, -50%);
     width: 37px;
     height: 37px;
-    border: 1px solid rgb(20, 34, 82);
+    border: 1px solid rgb(102, 102, 102);
     border-radius: 50%;
     background-color: #eeeeee;
     -webkit-backface-visibility: hidden;
@@ -505,7 +510,7 @@
 }
 #tvplb .lb-body {
     padding: 0;
-    margin: 0 6px 0 10px;
+    margin: 0 18px 0 18px;
     position: relative;
 }
 #tvplb .lb-body:after {
@@ -555,7 +560,7 @@
 @media screen and (min-width: 768px) {
     #tvpp {
         float: left;
-        width: 85%;
+        width: 84.15%;
     }
 }
 
@@ -777,11 +782,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 0.85;
-    font-family: 'FuturaStdHeavy';
+    font-family: Arial,sans-serif;
     font-size: 21px;
 }
 #tvpprd .product-popup .product-title > a {
-    font-family: FuturaStdHeavy;
+    font-family: Arial,sans-serif;
     text-align: center;
     font-size: 14px;
     color: #444444 !important;
@@ -801,7 +806,7 @@
     height: 40px;
     text-align: center;
     color: #273691;
-    font-family: FuturaStdMedium;
+    font-family: Arial,sans-serif;
     width: 100%;
     border: none;
     text-transform: uppercase;
