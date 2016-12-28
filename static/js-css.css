@@ -130,6 +130,7 @@
 #tvp-gallery #tvpchg-slider .slick-prev.slick-disabled,
 #tvp-gallery #tvpchg-slider-2 .slick-prev.slick-disabled {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////q6uq4uLilpaWYmJiXl5d1dXV3d3dYWFhUVFRVVVUlJSUTExMPDw8MDAwFBQUCAgICAgIBAQEAAAACzLiLAAAAE3RSTlOAhZSbn6Curr2/v97t8PP6/P3+WyEdvAAAAEpJREFUeAHtytsJgDAQRcFjNPFt1O2/V0kD3kUQFDLfQ/VYNweUmG0L+pgtjmOD44yfOa3jkMrZI/emsvKv14peZ49cR0JrqF5zAUZ2BlxR+a0IAAAAAElFTkSuQmCC)  0 0 no-repeat;
+    opacity: 1 !important;
 }
 
 #tvp-gallery #tvpchg-slider .slick-prev,
@@ -154,6 +155,7 @@
 #tvp-gallery #tvpchg-slider .slick-next.slick-disabled,
 #tvp-gallery #tvpchg-slider-2 .slick-next.slick-disabled {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEX////q6uq4uLilpaWYmJiXl5d1dXV3d3dYWFhUVFRVVVUlJSUTExMPDw8MDAwFBQUCAgICAgIBAQEAAAACzLiLAAAAE3RSTlOAhZSbn6Curr2/v97t8PP6/P3+WyEdvAAAAEpJREFUeNrtylEKgCAQBcCnqWWaVnv/u8ZewCdBYOB8D6Y3bHL8FKkeRBbha5OeFYdeC5r8qSu0T9UTf3VwsKPWWw8Trh2cwfStBzSbBlW1h468AAAAAElFTkSuQmCC)  100% 0 no-repeat;
+    opacity: 1 !important;
 }
 
 #tvp-gallery #tvpchg-slider ul,
