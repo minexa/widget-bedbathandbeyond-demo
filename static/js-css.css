@@ -420,12 +420,7 @@
 }
 @media screen and (min-width: 960px) {
     #tvplb .lb-content {
-        max-width: 865px;
-    }
-}
-@media screen and (min-width: 1024px) {
-    #tvplb .lb-content {
-        max-width: 910px;
+        max-width: 800px;
     }
 }
 #tvplb .lb-header {
@@ -471,7 +466,7 @@
 }
 #tvplb .lb-title {
     color: #444444;
-    padding-left: 10px;
+    padding-left: 18px;
     margin: 10px 0 30px 0;
     text-transform: capitalize;
     font-family: FuturaStdHeavy;
@@ -512,7 +507,7 @@
 }
 #tvplb .lb-body {
     padding: 0;
-    margin: 0 18px 0 18px;
+    margin: 0 17px 0 18px;
     position: relative;
 }
 #tvplb .lb-body:after {
@@ -562,7 +557,7 @@
 @media screen and (min-width: 768px) {
     #tvpp {
         float: left;
-        width: 84.15%;
+        width: 83.5%;
     }
 }
 
@@ -602,7 +597,7 @@
 @media screen and (min-width: 768px) {
     #tvpprd {
         height: 100%;
-        width: calc(13.5% - 4px);
+        width: calc(13.85% - 4px);
         position: absolute;
         right: 10px;
         top: -1px;
