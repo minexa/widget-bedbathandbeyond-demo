@@ -532,6 +532,7 @@
 #tvpp .tvpp-wrapper {
     position: relative;
     padding-bottom: 56.25%;
+    left: -1px;
 }
 #tvpp .video-overlay {
     width: 100%;
@@ -542,7 +543,7 @@
     background-size: cover;
 }
 #tvpp .tvpp-holder {
-    top: -1px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -558,6 +559,7 @@
     #tvpp {
         float: left;
         width: 83.5%;
+        overflow: hidden;
     }
 }
 
@@ -600,7 +602,7 @@
         width: calc(13.85% - 4px);
         position: absolute;
         right: 10px;
-        top: -1px;
+        top: 0;
     }
     #tvpprd #tvpprd-scroller {
         height: 100%;
@@ -803,17 +805,12 @@
     height: 40px;
     text-align: center;
     color: #273691;
-    font-family: Arial,sans-serif;
+    font-family: FuturaStdMedium;
     width: 100%;
     border: none;
     text-transform: uppercase;
     background-color: #efefef;
     border-bottom: 2px solid #dddddd;
-}
-@media scren and (min-width: 1024px) {
-    #tvpprd .product-popup .call-to-action {
-        width: 80%;
-    }
 }
 #tvpprd .product-popup .call-to-action:hover {
     background-color: #e0e0e0;
