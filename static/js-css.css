@@ -16,6 +16,9 @@
 .tvp-skel-row.tvp-mid {
     width: 40%;
 }
+.tvp-hidden {
+    display: none !important;
+}
 #lb-header-rp {
     display: none !important;
     position: absolute;
@@ -71,6 +74,7 @@
 }
 #tvp-gallery.tvp-skel {
     height: auto;
+    opacity: 0.5;
 }
 #tvp-gallery #tvpchg-slider *,
 #tvp-gallery #tvpchg-slider-2 *{
