@@ -1002,7 +1002,7 @@
     },
     poster: true,
     techOrder: 'html5,flash',
-    analytics: { tvpa: false },
+    analytics: { tvpa: true },
     apiBaseUrl: '//app.tvpage.com',
     apiTranscript: 'https://app.tvpage.com/api/videos/transcript',
     jsLib: '//d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.8.3-min.js',
@@ -1093,10 +1093,36 @@
       }
     }
 
+    function startAnalytics () {
+      $.ajax({ dataType: 'script', cache: true, url:"//a.tvpage.com/tvpa.min.js" })
+      .done(function() {
+      
+        var checks = 0;
+        (function analyticsPoller( ){
+           var deferred = setTimeout(function(){
+              if ( "undefined" === typeof window._tvpa ) {
+                if ( ++checks < 10 ) {
+                  analyticsPoller();
+                } else {
+                  console.log("analytics didn't load");
+                }
+              } else {
+                _tvpa.push(["config", { li:_tvp.lid, gaDomain:"embed.bedbathandbeyond.com", "logUrl": "\/\/api.tvpage.com\/v1\/__tvpa.gif"}]);
+                _tvpa.push(["track","ci",{ li:_tvp.lid}]);
+              }
+           }, 200);
+        })();
+
+      });
+      
+    }
+
     return {
       init: function(opts, callback) {
 
         options = opts || {};
+
+        startAnalytics();
 
         var html = require('text!tmpl/player.html');
         $el = $(html).appendTo(opts.place);
