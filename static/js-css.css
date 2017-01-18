@@ -67,14 +67,13 @@
     overflow:hidden;
     position: relative;
     opacity: 0.85;
-    margin: 8px 0 29px 0;
 }
 #tvp-gallery.ready {
     background-color: #EEEEEE;
+    margin: 8px 0 29px 0;
 }
 #tvp-gallery.tvp-skel {
     height: auto;
-    opacity: 0.5;
 }
 #tvp-gallery #tvpchg-slider *,
 #tvp-gallery #tvpchg-slider-2 *{
