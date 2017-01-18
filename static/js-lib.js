@@ -1073,7 +1073,7 @@
     function extractAsset(video) {
       if (video && video.asset) {
         var asset = video.asset;
-        asset.analyticsObj = { vd: video.id, li: video.loginId, pg: video.parentId ? video.parentId : 0 };
+        asset.analyticsObj = { vd: video.id, li: video.loginId, pg:_tvp.channelId };
         if (!asset.sources) asset.sources = [{ file: asset.videoId }];
         asset.type = asset.type || 'youtube';
         return asset;
@@ -3590,6 +3590,8 @@
 
         $(document).on('click', '.call-to-action', function(){
           window.open($(this).attr("data-url"),'_blank');
+          var $popup = $(this).closest('.product-popup');
+          track( $popup.attr("data-pid"), $popup.attr("data-parent") );
         });
 
         if (_.isFunction(callback)) {
