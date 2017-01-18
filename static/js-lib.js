@@ -11374,10 +11374,49 @@
       index = null,
       multiple = true,
       keys = null;
+      activeFullScreen = false;
+
+    document.addEventListener("mozfullscreenchange", function () {
+        if (document.mozFullScreen) {
+          activeFullScreen = true;
+          resize();
+          console.log('full');
+        } 
+        else {
+          activeFullScreen = false;
+          resize();
+          console.log('not full');
+        }
+    }, false);
+
+    $(document).on('keyup',function(e) {
+        if (e.keyCode == 27 && activeFullScreen) {
+           console.log('Esc key pressed.');
+           activeFullScreen = false;
+           resize();
+        }
+    });
+
+    $(document).on('click', '#CtrlFullscreen', function(e) {
+        if (activeFullScreen) {
+            activeFullScreen = false;
+        } else {
+            activeFullScreen = true;
+        }
+    });
 
     function resize() {
       if (player && $el.length) {
-        player.resize($el.width(), $el.height());
+        if(activeFullScreen) {
+          setTimeout(function() {
+              player.resize($(window).width(), $(window).height());
+          }, 0);
+        }
+        else {
+          setTimeout(function() {
+              player.resize($el.width(), $el.height());
+          }, 0);
+        }
       }
     }
 
