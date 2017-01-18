@@ -1024,10 +1024,11 @@
       player = null,
       index = null,
       multiple = true,
-      keys = null;
+      keys = null,
+      isFullScreen = false;
 
     function resize() {
-      if (player && $el.length) {
+      if (player && $el.length && !isFullScreen) {
         player.resize($el.width(), $el.height());
       }
     }
@@ -1117,6 +1118,11 @@
               callback();
             }
           });
+          if ("undefined" !== typeof window.BigScreen) {
+            BigScreen.onchange = function(){
+              isFullScreen = !isFullScreen;
+            };
+          }
           resize();
         };
 
@@ -3395,7 +3401,6 @@
     };
 
     function startDesktop(html) {
-      console.log("HAHJAHAH")
       var scrollId = 'tvpprd-scroller';
       $('.watch-more-tvp-mobile').hide();
       $el.append("<span id=\"lb-header-rp\">Related Products</span>").append($('<div/>').attr('id', scrollId));
@@ -3430,7 +3435,6 @@
         $.each(products, function(index, product) {
           sendAnalitics({ ct: product.id, vd: product.entityIdParent }, 'pi')
         });
-
         if (mobile) {
           startMobile(_.template(htmlMobile)({
             products: products
@@ -3521,7 +3525,10 @@
               productHtml = response.html;
             }
 
-            setTimeout(function() { productsLoaded(products, productHtml); }, 0);
+            $el.html("");
+            setTimeout(function() {
+              productsLoaded(products, productHtml); 
+            }, 0);
 
           }
         });
