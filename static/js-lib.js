@@ -3563,6 +3563,7 @@
 
     return {
       init: function(opts, callback) {
+        var ismobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         options = opts || {};
         $el = $('<div>').attr('id', 'tvpprd').append("<span id=\"lb-header-rp\">Related Products</span>").appendTo(opts.place);
         $.subscribe('player:play-video', loadCartridge);
@@ -3580,9 +3581,11 @@
           track( $(this).attr("data-pid"), $(this).attr("data-parent") );
         });
 
-        $(document).on('click', '.product', function(){
-          track( $(this).attr("data-pid"), $(this).attr("data-parent") );
-        });
+        if(!ismobile){
+          $(document).on('click', '.product', function(){
+            track( $(this).attr("data-pid"), $(this).attr("data-parent") );
+          });
+        }
 
         $(document).on('click', '.tvp-rating', function(){
           track( $(this).attr("data-pid"), $(this).attr("data-parent") );
