@@ -808,16 +808,16 @@
     padding: 0;
     height: 40px;
     text-align: center;
-    color: #273691;
+    color: white;
     font-family: FuturaStdMedium;
     width: 100%;
     border: none;
     text-transform: uppercase;
-    background-color: #efefef;
-    border-bottom: 2px solid #dddddd;
+    background-color: #00b0eb;
+    border-bottom: 2px solid #008ebd;
 }
 #tvpprd .product-popup .call-to-action:hover {
-    background-color: #e0e0e0;
+    background-color: #0496ce;
 }
 #tvpprd .product-popup .product-img {
     position: relative;
