@@ -1005,8 +1005,8 @@
     analytics: { tvpa: true },
     apiBaseUrl: '//app.tvpage.com',
     apiTranscript: 'https://app.tvpage.com/api/videos/transcript',
-    jsLib: '//d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.8.3-min.js',
-    swf: "//d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.8.3-flash.swf"
+    jsLib: '//d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.8.5-min.js',
+    swf: "//d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.8.5-flash.swf"
   });
 
   define('src/js/player/index',['require','jquery-private','../jquery.pubsub-loader','text!tmpl/player.html','./settings'],function(require) {
