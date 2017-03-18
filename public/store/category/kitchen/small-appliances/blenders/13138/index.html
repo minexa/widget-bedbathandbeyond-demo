@@ -231,37 +231,7 @@ var isDynUserCookieExists = 'false';
 <div id="pageWrapper" class="subCategory useCertonaJs useStoreLocator plp_view_3 useScene7">
 <input type="hidden" name="isInternationalCustomer" value="false" />
 <div id="headerWrapper" role="navigation">
-<div id="topNavHeader">
-<div class="container_12 posRel clearfix">
-<div class="grid_9 topNapWrap omega">
-<div id="topNavMenu">
-<ul class="clearfix">
-<li>
-<a href='index.html#' id="shipToLink" title="International Shipping"> Ship To  <span class="flag flagus"></span> </a>
-</li>
-<li class="findStore"><a href="https://www.bedbathandbeyond.com/store/selfservice/FindStore">Find A Store</a></li>
-<li><a href="https://www.bedbathandbeyond.com/store/static/coupons">Sign Up For Offers</a></li>
-<li><a href="https://www.bedbathandbeyond.com/store/static/GiftCardHomePage">Gift Cards</a></li>
-<li>
-<a href="https://www.bedbathandbeyond.com/store/account/TrackOrder">
-Track Order</a>
-</li>
-<li><a href="https://www.bedbathandbeyond.com/store/selfservice/ContactUs">Contact Us</a></li>
-<li>
-<div id="personalStoreLink">
-<a href="https://www.bedbathandbeyond.com/store/personalstore/">You May Like...</a>
-</div>
-<div class="clear"></div>
-</li>
-<li class="last posRel clearfix">
-</li>
-</ul>
-</div>
-</div>
-<div id="shoppingCartTrigger" class="grid_3 alpha">
-</div>
-</div>
-</div>
+
 <div class="clear"></div>
 <div id="mainHeader">
 <div id="psFlyout">
@@ -918,7 +888,7 @@ border: white dotted thin !important;
 <div class="facetContent">
 <form method="post" action="index.html#" id="narrowForm">
 <div class="narrowSearch">
-<input id="additionalKeyword" class="removeDisabled" disabled="disabled" type="text" value="" title="narrowDown" name="additionalKeywordsearch" placeholder="Search Within" />
+
 <input type="submit" class="removeDisabled hidden" disabled="disabled" value="submit" title="narrow">
 <a role="button" title="narrow" aria-label="submit" class="removeDisabled facetSearchLink" href="javascript:void(0);"></a>
 <input type="hidden" name="additionalKeyword" value="" />
@@ -3317,7 +3287,38 @@ Euro Cuisine&reg; 2-Quart Glass Yogurt Jar
 </div>
 
 
-<div id="tvp-gallery"></div>
+<a class="tvp-carousel" id="plp-desktop"> TVPage PLP Desktop </a>
+    <script>
+        window.__TVPage__ = window.__TVPage__ || {};
+        __TVPage__.config = __TVPage__.config || {};
+        __TVPage__.config['plp-desktop'] = {
+            loginid: '1758166',
+            title_text: "Watch Videos: <span>" + $("h1").html() + "</span>",
+            channel: {
+                "id": "81791055",
+                "parameters": {
+                    "category": "13138"
+                }
+            }
+        };
+
+        (function(w,d,id) {
+            w.addEventListener("load",function () {
+                var x = new XMLHttpRequest();
+                x.open('GET', "//tvpwidgets-bedbathandbeyond-com.tvpagecdn.com/tvpwidget/plp-desktop-loader/");
+                x.onload = function (r) {
+                    var a = d.getElementById(id);
+                    a.insertAdjacentHTML('beforebegin', r.currentTarget.response || r.target.responseText);
+                    var s = d.createElement('script');
+                    s.appendChild(d.createTextNode(d.getElementById(id + '-script').innerHTML));
+                    d.getElementsByTagName('head')[0].appendChild(s);
+                    a.parentNode.removeChild(a);
+                };
+                x.send();
+            });
+        })(window,document,'plp-desktop');
+
+    </script>
 
 
 <div id="row3" class="clearfix prodGridRow">
@@ -6916,33 +6917,6 @@ Compare Products
 </div>
 </div>
 </div>
-<script type="text/javascript">
-window.TVPage = window.TVPage || {};
-window.TVPage.config = TVPage.config || {};
-window.TVPage.config['tvp-gallery'] = {
-	attributes: {
-		category: {
-			value: 13138,
-			label: "Blenders"
-		}
-	},
-};
-(function(d){
-	var s = d.createElement('script');
-	s.src = '//bbb-plp-widget.netlify.com/js-lib.js';
-	document.body.appendChild(s);
-})(document);
-</script>
-<script>
-$(function(){
-	if ( $(".defaultView").hasClass("active") ||  $(".gridView").hasClass("active") ) {
-		$("#tvp-gallery").insertAfter("#row2").show();
-	}
-	else {
-  		$("#tvp-gallery").insertAfter(".prodListRow li.product:nth-child(4)").show();
-  		$("#juicersBlogContentSS").addClass("noBorderBot");
-	}
-});
-</script>
+
 </body>
 </html>
