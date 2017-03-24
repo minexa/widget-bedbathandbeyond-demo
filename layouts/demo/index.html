@@ -3348,39 +3348,23 @@ Euro Cuisine&reg; 2-Quart Glass Yogurt Jar
 </div>
 
 <!-- tvpage code -->
-<a class="tvp-carousel" id="plp-desktop"></a>
-    <script>
-        window.__TVPage__ = window.__TVPage__ || {};
-        __TVPage__.config = __TVPage__.config || {};
-        __TVPage__.config['plp-desktop'] = {
-            loginid: '1758166',
-            title_text: "Watch Videos: <span>" + $("h1").html() + "</span>",
-            channel: {
-                "id": "81791055",
-                "parameters": {
-                    "category": "13138"
-                }
-            }
-        };
-
-        (function(w,d,id) {
-            w.addEventListener("load",function () {
-                var x = new XMLHttpRequest();
-                x.open('GET', "//tvpwidgets-bedbathandbeyond-com.tvpagecdn.com/tvpwidget/plp-desktop-loader/");
-                x.onload = function (r) {
-                    var a = d.getElementById(id);
-                    a.insertAdjacentHTML('beforebegin', r.currentTarget.response || r.target.responseText);
-                    var s = d.createElement('script');
-                    s.appendChild(d.createTextNode(d.getElementById(id + '-script').innerHTML));
-                    d.getElementsByTagName('head')[0].appendChild(s);
-                    a = d.getElementById(id);
-                    a.parentNode.removeChild(a);
-                };
-                x.send();
-            });
-        })(window,document,'plp-desktop');
-
-    </script>
+<div class="tvp-carousel" id="plp-desktop"></div>
+<script>
+  window.__TVPage__ = window.__TVPage__ || {};
+  __TVPage__.config = __TVPage__.config || {};
+  __TVPage__.config['plp-desktop'] = {
+    // debug: true,
+    title_text: "Watch Videos: <span>" + $("h1").html() + "</span>",
+    targetEl: "plp-desktop",
+    channel: {
+        id: "81791055",
+        parameters: {
+            category: "13138"
+        }
+    }
+  };
+</script>
+<script src='//tvpwidgets-bedbathandbeyond-com.tvpagecdn.com/tvpwidget/plp-desktop/index.js'></script>
 <!-- tvpage code -->
 
 <div id="row3" class="clearfix prodGridRow">
